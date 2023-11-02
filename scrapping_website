@@ -1,10 +1,11 @@
 import requests
 url = "https://www.waheediqbal.info/"
 try:
-    response = requests.get(url)
-    if response.status_code == 200:
-        print(response.text)
+    response1 = requests.get(url)
+    if response1.status_code == 200:
+        print(response1.text)
     else:
-        print(f"Failed to retrieve the web page. Status code: {response.status_code}")
+        print(f"Failed to retrieve the web page. Status code: {response1.status_code}")
 except Exception as e:
     print(f"An error occurred: {str(e)}")
+
